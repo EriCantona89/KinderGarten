@@ -37,7 +37,7 @@ public class PresentService : IPresentService
 
     public Present GetById(int id)
     {
-        var present = _context.Presents.FirstOrDefault(x => x.Id == id);
+        var present = _context.Presents.Include(x=>x.Children).FirstOrDefault(x => x.Id == id);
         if (present == null) throw new Exception("Null reference");
         return present;
     }
