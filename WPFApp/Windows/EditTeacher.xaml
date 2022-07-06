@@ -1,4 +1,4 @@
-﻿<Window x:Class="WPFApp.Windows.EditParent"
+﻿<Window x:Class="WPFApp.Windows.EditTeacher"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -21,11 +21,11 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock  TextAlignment="Center" Grid.Column="1" FontWeight="SemiBold" FontSize="20"> EDIT PARENT</TextBlock>
+        <TextBlock  TextAlignment="Center" Grid.Column="1" FontWeight="SemiBold" FontSize="20"> EDIT TEACHER</TextBlock>
         <TextBlock  FontWeight="SemiBold" HorizontalAlignment="Center" Height="50" Grid.Column="0" Grid.Row="1">First Name </TextBlock>
         <TextBlock FontWeight="SemiBold" HorizontalAlignment="Center" Height="50" Grid.Column="0" Grid.Row="2">Last Name  </TextBlock>
         <TextBox Name="FirstName" Height="50" Grid.Column="1" Grid.Row="1"></TextBox>
         <TextBox Name="LastName" Height="50" Grid.Column="1" Grid.Row="2"></TextBox>
-        <Button Content="Edit " Height="50" Grid.Column="1" Grid.Row="5" Click="EditChildren_Button"></Button>
+        <Button Content="Edit " Height="50" Grid.Column="1" Grid.Row="5" Click="EditTeacher_Button"></Button>
     </Grid>
 </Window>
