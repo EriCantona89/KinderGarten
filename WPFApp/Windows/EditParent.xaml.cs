@@ -7,7 +7,7 @@ public partial class EditParent : Window
 {
     private readonly IParentService _service;
     private int id;
-    public EditParent(int id )
+    public EditParent(int id)
     {
         this.id = id;
         InitializeComponent();
