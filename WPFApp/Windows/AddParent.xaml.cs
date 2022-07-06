@@ -12,7 +12,7 @@ public partial class AddParent : Window
         _service = new ParentService();
     }
 
-    private void AddTeacher_Button(object sender, RoutedEventArgs e)
+    private void AddParent_Button(object sender, RoutedEventArgs e)
     {
         if (FirstName != null && LastName != null )
         {
