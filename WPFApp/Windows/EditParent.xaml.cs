@@ -20,8 +20,6 @@ public partial class EditParent : Window
         var entity =  _service.GetById(id);
         FirstName.Text = entity.FirstName;
         LastName.Text = entity.LastName;
-
-
     }
     private void EditChildren_Button(object sender, RoutedEventArgs e)
     {

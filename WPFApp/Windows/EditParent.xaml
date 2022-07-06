@@ -5,7 +5,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:WPFApp.Windows"
         mc:Ignorable="d"
-        Title="AddParent" Height="450" Width="500">
+        Title="EditParent" Height="450" Width="500">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
