@@ -10,6 +10,5 @@ public class AppDbContextFactory:IDesignTimeDbContextFactory<AppDbContext>
         var options = new DbContextOptionsBuilder<AppDbContext>();
         options.UseSqlServer("Server=.; Database=KinderGarten; Trusted_Connection=True");
         return new AppDbContext(options.Options);
-
     }
 }
