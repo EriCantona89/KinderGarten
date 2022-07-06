@@ -7,7 +7,7 @@
         xmlns:views="clr-namespace:WPFApp.Views"
         xmlns:viewModels="clr-namespace:WPFApp.ViewModels"
         mc:Ignorable="d"
-        Title="Program" Height="500" Width="800">
+        Title="Program" Height="500" Width="1400">
     
     <Window.Resources>
         <DataTemplate x:Name="parents" DataType="{x:Type viewModels:ParentViewModel}">
