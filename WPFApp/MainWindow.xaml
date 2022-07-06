@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Program" Height="500" Width="800">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <DockPanel Background="DarkGreen"  Grid.Row="0" Grid.Column="4"  Grid.RowSpan="5" >
+            <StackPanel>
+                <Button Height="50" Content="Childrens" Margin="20" Click="Children_Click"  />
+                <Button Height="50" Content="Parents" Margin="20" Click="Parent_Click" />
+                <Button Height="50" Content="Teachers" Margin="20" Click="Teacher_Click" />
+                <Button Height="50" Content="Presents" Margin="20" Click="Present_Click" />
+                <Button Height="50" Content="Menu" Margin="20"  Click="Menu_Click"/>
+            </StackPanel>
+        </DockPanel>
+        
     </Grid>
 </Window>
