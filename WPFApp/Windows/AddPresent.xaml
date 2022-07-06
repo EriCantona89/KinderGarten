@@ -1,0 +1,33 @@
+﻿<Window x:Class="WPFApp.Windows.AddPresent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WPFApp.Windows"
+        mc:Ignorable="d"
+        Title="AddPresent" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock  TextAlignment="Center" Grid.Column="1" FontWeight="SemiBold" FontSize="20"> ADD PRESENT</TextBlock>
+        <TextBlock  FontWeight="SemiBold" HorizontalAlignment="Center" Height="50" Grid.Column="0" Grid.Row="1">Date </TextBlock>
+        <TextBlock FontWeight="SemiBold" HorizontalAlignment="Center" Height="50" Grid.Column="0" Grid.Row="2">Children ID </TextBlock>
+        <TextBlock FontWeight="SemiBold" HorizontalAlignment="Center" Height="50" Grid.Column="0" Grid.Row="3">Present </TextBlock>
+        <DatePicker Name="Date" Height="50" Grid.Column="1" Grid.Row="1"></DatePicker>
+        <TextBox Name="ChildrenId" Height="50" Grid.Column="1" Grid.Row="2"></TextBox>
+        <CheckBox Name="Presents" Height="50" Grid.Column="1" Grid.Row="3"></CheckBox>
+        <Button Content="Add" Height="50" Grid.Column="1" Grid.Row="5" Click="AddPresent_Button"></Button>
+    </Grid>
+</Window>
