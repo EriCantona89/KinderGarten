@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EFLib.Services;
 
-public class PresentService
+public class PresentService : IPresentService
 {
     private readonly AppDbContext _context;
     public PresentService()
