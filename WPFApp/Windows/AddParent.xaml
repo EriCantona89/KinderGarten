@@ -1,0 +1,32 @@
+﻿<Window x:Class="WPFApp.Windows.AddParent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WPFApp.Windows"
+        mc:Ignorable="d"
+        Title="AddParent" Height="450" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock  TextAlignment="Center" Grid.Column="1" FontWeight="SemiBold" FontSize="20"> ADD PARENT</TextBlock>
+        <TextBlock  FontWeight="SemiBold" HorizontalAlignment="Center" Height="50" Grid.Column="0" Grid.Row="1">First Name </TextBlock>
+        <TextBlock FontWeight="SemiBold" HorizontalAlignment="Center" Height="50" Grid.Column="0" Grid.Row="2">Last Name  </TextBlock>
+        <TextBox Name="FirstName" Height="50" Grid.Column="1" Grid.Row="1"></TextBox>
+        <TextBox Name="LastName" Height="50" Grid.Column="1" Grid.Row="2"></TextBox>
+        <Button Content="Add " Height="50" Grid.Column="1" Grid.Row="5" Click="
+            Ini"></Button>
+    </Grid>
+</Window>
