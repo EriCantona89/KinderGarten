@@ -4,8 +4,29 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFApp"
+        xmlns:views="clr-namespace:WPFApp.Views"
+        xmlns:viewModels="clr-namespace:WPFApp.ViewModels"
         mc:Ignorable="d"
         Title="Program" Height="500" Width="800">
+    
+    <Window.Resources>
+        <DataTemplate x:Name="parents" DataType="{x:Type viewModels:ParentViewModel}">
+            <views:ParentView DataContext="{Binding}" />
+        </DataTemplate>
+        <DataTemplate x:Name="childrens" DataType="{x:Type viewModels:ChildrenViewModel}">
+            <views:ChildrenView DataContext="{Binding}" />
+        </DataTemplate>
+        <DataTemplate x:Name="teachers" DataType="{x:Type viewModels:TeacherViewModel}">
+            <views:TeacherView DataContext="{Binding}" />
+        </DataTemplate>
+        <DataTemplate x:Name="presents" DataType="{x:Type viewModels:PresentViewModel}">
+            <views:PresentView DataContext="{Binding}" />
+        </DataTemplate>
+        <DataTemplate x:Name="menu" DataType="{x:Type viewModels:MenuViewModel}">
+            <views:MenuView DataContext="{Binding}" />
+        </DataTemplate>
+    </Window.Resources>
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -32,5 +53,6 @@
             </StackPanel>
         </DockPanel>
         
+        <ContentControl  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="5" Content="{Binding}"/>
     </Grid>
 </Window>
