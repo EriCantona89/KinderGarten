@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:WPFApp.Views"
              mc:Ignorable="d"
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="1100">
     <Grid >
             <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -27,10 +27,10 @@
             Name="View">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path = Id}" Header="Parent ID" Width="160" ></GridViewColumn>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path = FirstName}" Header="FirstName" Width="160"></GridViewColumn>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path = LastName}" Header="Last Name" Width="160"></GridViewColumn>
-                    <GridViewColumn Header="Delete" Width="160">
+                    <GridViewColumn DisplayMemberBinding="{Binding Path = Id}" Header="Parent ID" Width="220" ></GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path = FirstName}" Header="FirstName" Width="220"></GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path = LastName}" Header="Last Name" Width="220"></GridViewColumn>
+                    <GridViewColumn Header="Delete" Width="220">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <Button Content="Delete"  Click="DeleteButton_Click"></Button>
@@ -38,7 +38,7 @@
                             
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
-                    <GridViewColumn Header="Update" Width="160">
+                    <GridViewColumn Header="Update" Width="220">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <Button Content="Update" Click="Update_Click"></Button>
