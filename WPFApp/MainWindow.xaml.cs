@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using EFLib;
+using WPFApp.ViewModels;
 
 namespace WPFApp
 {
@@ -24,31 +25,32 @@ namespace WPFApp
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MenuViewModel();
         }
 
         private void Menu_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            DataContext = new MenuViewModel();
         }
 
         private void Present_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            DataContext = new PresentViewModel();
         }
 
         private void Teacher_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            DataContext = new TeacherViewModel();
         }
 
         private void Parent_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            DataContext = new ParentViewModel();
         }
 
         private void Children_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            DataContext = new ChildrenViewModel();
         }
     }
 }
