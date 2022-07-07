@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using EFLib.Services;
+using WPFApp.Windows;
 
 namespace WPFApp.Views;
 
@@ -23,14 +24,15 @@ public partial class PresentView : UserControl
 
     private void Update_Click(object sender, RoutedEventArgs e)
     {
-        // TO DO Window
-        throw new System.NotImplementedException();
+        dynamic content = ((Button) sender).DataContext;
+        Window editPresent = new EditPresent(content.Id);
+        editPresent.Show();
     }
 
     private void AddPresent_Click(object sender, RoutedEventArgs e)
     {
-        // TO DO Window
-        throw new System.NotImplementedException();
+        Window addPresent = new AddPresent();
+        addPresent.Show();
     }
 
     private void Refresh_Click(object sender, RoutedEventArgs e)

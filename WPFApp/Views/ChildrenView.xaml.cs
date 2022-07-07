@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using EFLib.Services;
+using WPFApp.Windows;
 
 namespace WPFApp.Views;
 
@@ -23,14 +24,15 @@ public partial class ChildrenView : UserControl
 
     private void Update_Click(object sender, RoutedEventArgs e)
     {
-        // TO DO Window
-        throw new System.NotImplementedException();
+        dynamic content = ((Button) sender).DataContext;
+        Window editChildren = new EditChildren(content.Id);
+        editChildren.Show();
     }
 
     private void AddChildren_Click(object sender, RoutedEventArgs e)
     {
-        // TO DO Window
-        throw new System.NotImplementedException();
+        Window addChildren = new AddChildren();
+        addChildren.Show();
     }
 
     private void Refresh_Click(object sender, RoutedEventArgs e)

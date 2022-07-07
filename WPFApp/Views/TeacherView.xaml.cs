@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using EFLib.Services;
+using WPFApp.Windows;
 
 namespace WPFApp.Views;
 
@@ -23,14 +24,15 @@ public partial class TeacherView : UserControl
 
     private void Update_Click(object sender, RoutedEventArgs e)
     {
-        // TO DO Window
-        throw new System.NotImplementedException();
+        dynamic content = ((Button) sender).DataContext;
+        Window editTeacher = new EditTeacher(content.Id);
+        editTeacher.Show();
     }
 
     private void AddTeacher_Click(object sender, RoutedEventArgs e)
     {
-        // TO DO Window
-        throw new System.NotImplementedException();
+        Window addTeacher = new AddTeacher();
+        addTeacher.Show();
     }
 
     private void Refresh_Click(object sender, RoutedEventArgs e)
